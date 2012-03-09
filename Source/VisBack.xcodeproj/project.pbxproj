@@ -1,0 +1,333 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B3577DD138C205C00CBE66F /* ESNeuron.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B3577C6138C205C00CBE66F /* ESNeuron.cpp */; };
+		5B3577DE138C205C00CBE66F /* ESRegion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B3577C8138C205C00CBE66F /* ESRegion.cpp */; };
+		5B3577DF138C205C00CBE66F /* FstreamWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B3577CA138C205C00CBE66F /* FstreamWrapper.cpp */; };
+		5B3577E0138C205C00CBE66F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B3577CC138C205C00CBE66F /* main.cpp */; };
+		5B3577E1138C205C00CBE66F /* Network.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B3577CD138C205C00CBE66F /* Network.cpp */; };
+		5B3577E2138C205C00CBE66F /* Neuron.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B3577CF138C205C00CBE66F /* Neuron.cpp */; };
+		5B3577E3138C205C00CBE66F /* param.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B3577D1138C205C00CBE66F /* param.cpp */; };
+		5B3577E4138C205C00CBE66F /* Region.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B3577D3138C205C00CBE66F /* Region.cpp */; };
+		5B3577E5138C205C00CBE66F /* Synapse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B3577D5138C205C00CBE66F /* Synapse.cpp */; };
+		5B3577E6138C205C00CBE66F /* utilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B3577D7138C205C00CBE66F /* utilities.cpp */; };
+		5B3577E7138C205C00CBE66F /* V1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B3577D9138C205C00CBE66F /* V1.cpp */; };
+		5B3577E8138C205C00CBE66F /* V1Neuron.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B3577DB138C205C00CBE66F /* V1Neuron.cpp */; };
+		8DD76F6A0486A84900D96B5E /* VisBack.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859E8B029090EE04C91782 /* VisBack.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76F690486A84900D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				8DD76F6A0486A84900D96B5E /* VisBack.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5B3577C6138C205C00CBE66F /* ESNeuron.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ESNeuron.cpp; sourceTree = "<group>"; };
+		5B3577C7138C205C00CBE66F /* ESNeuron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESNeuron.h; sourceTree = "<group>"; };
+		5B3577C8138C205C00CBE66F /* ESRegion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ESRegion.cpp; sourceTree = "<group>"; };
+		5B3577C9138C205C00CBE66F /* ESRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESRegion.h; sourceTree = "<group>"; };
+		5B3577CA138C205C00CBE66F /* FstreamWrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FstreamWrapper.cpp; sourceTree = "<group>"; };
+		5B3577CB138C205C00CBE66F /* FstreamWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FstreamWrapper.h; sourceTree = "<group>"; };
+		5B3577CC138C205C00CBE66F /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5B3577CD138C205C00CBE66F /* Network.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Network.cpp; sourceTree = "<group>"; };
+		5B3577CE138C205C00CBE66F /* Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+		5B3577CF138C205C00CBE66F /* Neuron.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Neuron.cpp; sourceTree = "<group>"; };
+		5B3577D0138C205C00CBE66F /* Neuron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Neuron.h; sourceTree = "<group>"; };
+		5B3577D1138C205C00CBE66F /* param.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = param.cpp; sourceTree = "<group>"; };
+		5B3577D2138C205C00CBE66F /* param.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = param.h; sourceTree = "<group>"; };
+		5B3577D3138C205C00CBE66F /* Region.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Region.cpp; sourceTree = "<group>"; };
+		5B3577D4138C205C00CBE66F /* Region.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Region.h; sourceTree = "<group>"; };
+		5B3577D5138C205C00CBE66F /* Synapse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Synapse.cpp; sourceTree = "<group>"; };
+		5B3577D6138C205C00CBE66F /* Synapse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Synapse.h; sourceTree = "<group>"; };
+		5B3577D7138C205C00CBE66F /* utilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utilities.cpp; sourceTree = "<group>"; };
+		5B3577D8138C205C00CBE66F /* utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utilities.h; sourceTree = "<group>"; };
+		5B3577D9138C205C00CBE66F /* V1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = V1.cpp; sourceTree = "<group>"; };
+		5B3577DA138C205C00CBE66F /* V1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V1.h; sourceTree = "<group>"; };
+		5B3577DB138C205C00CBE66F /* V1Neuron.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = V1Neuron.cpp; sourceTree = "<group>"; };
+		5B3577DC138C205C00CBE66F /* V1Neuron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V1Neuron.h; sourceTree = "<group>"; };
+		8DD76F6C0486A84900D96B5E /* VisBack */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VisBack; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6859E8B029090EE04C91782 /* VisBack.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = VisBack.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76F660486A84900D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* VisBack */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6859E8C029090F304C91782 /* Documentation */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = VisBack;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				5B3577C6138C205C00CBE66F /* ESNeuron.cpp */,
+				5B3577C7138C205C00CBE66F /* ESNeuron.h */,
+				5B3577C8138C205C00CBE66F /* ESRegion.cpp */,
+				5B3577C9138C205C00CBE66F /* ESRegion.h */,
+				5B3577CA138C205C00CBE66F /* FstreamWrapper.cpp */,
+				5B3577CB138C205C00CBE66F /* FstreamWrapper.h */,
+				5B3577CC138C205C00CBE66F /* main.cpp */,
+				5B3577CD138C205C00CBE66F /* Network.cpp */,
+				5B3577CE138C205C00CBE66F /* Network.h */,
+				5B3577D0138C205C00CBE66F /* Neuron.h */,
+				5B3577CF138C205C00CBE66F /* Neuron.cpp */,
+				5B3577D1138C205C00CBE66F /* param.cpp */,
+				5B3577D2138C205C00CBE66F /* param.h */,
+				5B3577D3138C205C00CBE66F /* Region.cpp */,
+				5B3577D4138C205C00CBE66F /* Region.h */,
+				5B3577D5138C205C00CBE66F /* Synapse.cpp */,
+				5B3577D6138C205C00CBE66F /* Synapse.h */,
+				5B3577D7138C205C00CBE66F /* utilities.cpp */,
+				5B3577D8138C205C00CBE66F /* utilities.h */,
+				5B3577D9138C205C00CBE66F /* V1.cpp */,
+				5B3577DA138C205C00CBE66F /* V1.h */,
+				5B3577DB138C205C00CBE66F /* V1Neuron.cpp */,
+				5B3577DC138C205C00CBE66F /* V1Neuron.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76F6C0486A84900D96B5E /* VisBack */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6859E8C029090F304C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				C6859E8B029090EE04C91782 /* VisBack.1 */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76F620486A84900D96B5E /* VisBack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "VisBack" */;
+			buildPhases = (
+				8DD76F640486A84900D96B5E /* Sources */,
+				8DD76F660486A84900D96B5E /* Frameworks */,
+				8DD76F690486A84900D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VisBack;
+			productInstallPath = "$(HOME)/bin";
+			productName = VisBack;
+			productReference = 8DD76F6C0486A84900D96B5E /* VisBack */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "VisBack" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* VisBack */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76F620486A84900D96B5E /* VisBack */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76F640486A84900D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B3577DD138C205C00CBE66F /* ESNeuron.cpp in Sources */,
+				5B3577DE138C205C00CBE66F /* ESRegion.cpp in Sources */,
+				5B3577DF138C205C00CBE66F /* FstreamWrapper.cpp in Sources */,
+				5B3577E0138C205C00CBE66F /* main.cpp in Sources */,
+				5B3577E1138C205C00CBE66F /* Network.cpp in Sources */,
+				5B3577E2138C205C00CBE66F /* Neuron.cpp in Sources */,
+				5B3577E3138C205C00CBE66F /* param.cpp in Sources */,
+				5B3577E4138C205C00CBE66F /* Region.cpp in Sources */,
+				5B3577E5138C205C00CBE66F /* Synapse.cpp in Sources */,
+				5B3577E6138C205C00CBE66F /* utilities.cpp in Sources */,
+				5B3577E7138C205C00CBE66F /* V1.cpp in Sources */,
+				5B3577E8138C205C00CBE66F /* V1Neuron.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB923208733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_OPENMP_SUPPORT = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_GLIBCXX_DEBUG=1",
+					"_GLIBCXX_DEBUG_PEDANTIC=1",
+				);
+				GCC_VERSION = 4.0;
+				INSTALL_PATH = /usr/local/bin;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = VisBack;
+			};
+			name = Debug;
+		};
+		1DEB923308733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_OPENMP_SUPPORT = YES;
+				GCC_AUTO_VECTORIZATION = NO;
+				GCC_ENABLE_SSE3_EXTENSIONS = NO;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_UNROLL_LOOPS = NO;
+				GCC_VERSION = 4.2;
+				HEADER_SEARCH_PATHS = (
+					/Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/GSL/include,
+					/Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/libconfig/include,
+				);
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					/Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/GSL/lib,
+					/Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/libconfig/lib,
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lconfig++",
+					"-lgsl",
+				);
+				PRODUCT_NAME = VisBack;
+			};
+			name = Release;
+		};
+		1DEB923608733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = 3.3;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/libconfig/include,
+					/Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/GSL/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/libconfig/lib,
+					/Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/GSL/lib,
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lconfig++",
+					"-lgsl",
+				);
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1DEB923708733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = 3.3;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/libconfig/include,
+					/Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/GSL/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/libconfig/lib,
+					/Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/GSL/lib,
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lconfig++",
+					"-lgsl",
+				);
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "VisBack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923208733DC60010E9CD /* Debug */,
+				1DEB923308733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "VisBack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923608733DC60010E9CD /* Debug */,
+				1DEB923708733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

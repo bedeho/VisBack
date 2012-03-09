@@ -1,0 +1,859 @@
+// !$*UTF8*$!
+{
+	08FB7793FE84155DC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeExecutable = 5BB9FF4A136821AC00253706 /* VisBack */;
+		activeTarget = 8DD76F620486A84900D96B5E /* VisBack */;
+		addToTargets = (
+			8DD76F620486A84900D96B5E /* VisBack */,
+		);
+		breakpoints = (
+		);
+		codeSenseManager = 5BB9FF51136821B700253706 /* Code sense */;
+		executables = (
+			5BB9FF4A136821AC00253706 /* VisBack */,
+		);
+		expressions = (
+			"n->afferentSynapses[s].weight",
+			"n->afferentSynapses[s].preSynapticNeuron->firingRate",
+			n,
+			"learningOn && (outputNeurons || outputWeights)",
+		);
+		perUserDictionary = {
+			"PBXConfiguration.PBXBreakpointsDataSource.v1:1CA1AED706398EBD00589147" = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBreakpointsDataSource_BreakpointID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					198,
+					20,
+					99,
+					99,
+					29,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBreakpointsDataSource_ActionID,
+					PBXBreakpointsDataSource_TypeID,
+					PBXBreakpointsDataSource_BreakpointID,
+					PBXBreakpointsDataSource_UseID,
+					PBXBreakpointsDataSource_LocationID,
+					PBXBreakpointsDataSource_ConditionID,
+					PBXBreakpointsDataSource_IgnoreCountID,
+					PBXBreakpointsDataSource_ContinueID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXErrorsWarningsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXErrorsWarningsDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					790,
+					45.20849609375,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXErrorsWarningsDataSource_TypeID,
+					PBXErrorsWarningsDataSource_MessageID,
+					PBXErrorsWarningsDataSource_LocationID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					1352.58349609375,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					1466,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFindDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFindDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					200,
+					1488,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFindDataSource_MessageID,
+					PBXFindDataSource_LocationID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXSymbolsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXSymbolsDataSource_SymbolNameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					16,
+					200,
+					50,
+					540,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXSymbolsDataSource_SymbolTypeIconID,
+					PBXSymbolsDataSource_SymbolNameID,
+					PBXSymbolsDataSource_SymbolTypeID,
+					PBXSymbolsDataSource_ReferenceNameID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					1425,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 343229092;
+			PBXWorkspaceStateSaveDate = 343229092;
+		};
+		perUserProjectItems = {
+			5B03FD0C1369DDA0007ACB85 /* PBXTextBookmark */ = 5B03FD0C1369DDA0007ACB85 /* PBXTextBookmark */;
+			5B0684CE144604C500146FAD /* PBXTextBookmark */ = 5B0684CE144604C500146FAD /* PBXTextBookmark */;
+			5B06852814460DA700146FAD /* PBXTextBookmark */ = 5B06852814460DA700146FAD /* PBXTextBookmark */;
+			5B25D9E313A507F5004C41FB /* PBXTextBookmark */ = 5B25D9E313A507F5004C41FB /* PBXTextBookmark */;
+			5B884992146EDBA1008F2B09 /* PBXTextBookmark */ = 5B884992146EDBA1008F2B09 /* PBXTextBookmark */;
+			5B8849A4146EE17E008F2B09 /* PBXTextBookmark */ = 5B8849A4146EE17E008F2B09 /* PBXTextBookmark */;
+			5BCDFF1314716541002A22F3 /* PBXTextBookmark */ = 5BCDFF1314716541002A22F3 /* PBXTextBookmark */;
+			5BCDFF261471684A002A22F3 /* PBXTextBookmark */ = 5BCDFF261471684A002A22F3 /* PBXTextBookmark */;
+			5BCDFFF41475514F002A22F3 /* PBXTextBookmark */ = 5BCDFFF41475514F002A22F3 /* PBXTextBookmark */;
+			5BF3E2F2144795EE00B744B9 /* PBXTextBookmark */ = 5BF3E2F2144795EE00B744B9 /* PBXTextBookmark */;
+			5BF3E2F3144795EE00B744B9 /* PBXTextBookmark */ = 5BF3E2F3144795EE00B744B9 /* PBXTextBookmark */;
+			5BF3E2F5144795EE00B744B9 /* PBXTextBookmark */ = 5BF3E2F5144795EE00B744B9 /* PBXTextBookmark */;
+			5BF3E2F6144795EE00B744B9 /* PBXTextBookmark */ = 5BF3E2F6144795EE00B744B9 /* PBXTextBookmark */;
+			5BF3E2FA144795EE00B744B9 /* PBXTextBookmark */ = 5BF3E2FA144795EE00B744B9 /* PBXTextBookmark */;
+			5BF3E2FB144795EE00B744B9 /* PBXTextBookmark */ = 5BF3E2FB144795EE00B744B9 /* PBXTextBookmark */;
+			5BF3E2FC144795EE00B744B9 /* PBXTextBookmark */ = 5BF3E2FC144795EE00B744B9 /* PBXTextBookmark */;
+			5BF3E3BE1447A74000B744B9 /* PBXTextBookmark */ = 5BF3E3BE1447A74000B744B9 /* PBXTextBookmark */;
+			5BF3E40F1447B08C00B744B9 /* PBXTextBookmark */ = 5BF3E40F1447B08C00B744B9 /* PBXTextBookmark */;
+			5BF3E4B01448CB6200B744B9 /* PBXTextBookmark */ = 5BF3E4B01448CB6200B744B9 /* PBXTextBookmark */;
+			5BF3E5BB1449FA8A00B744B9 /* PBXTextBookmark */ = 5BF3E5BB1449FA8A00B744B9 /* PBXTextBookmark */;
+			5BF3E5BC1449FA8A00B744B9 /* PBXTextBookmark */ = 5BF3E5BC1449FA8A00B744B9 /* PBXTextBookmark */;
+			5BF3E626144B781900B744B9 /* PBXTextBookmark */ = 5BF3E626144B781900B744B9 /* PBXTextBookmark */;
+			5BF3E646144CBFFF00B744B9 /* PBXTextBookmark */ = 5BF3E646144CBFFF00B744B9 /* PBXTextBookmark */;
+			5BF3E647144CBFFF00B744B9 /* PBXTextBookmark */ = 5BF3E647144CBFFF00B744B9 /* PBXTextBookmark */;
+			5BF3E648144CBFFF00B744B9 /* PBXTextBookmark */ = 5BF3E648144CBFFF00B744B9 /* PBXTextBookmark */;
+			5BF3E64A144CBFFF00B744B9 /* PBXTextBookmark */ = 5BF3E64A144CBFFF00B744B9 /* PBXTextBookmark */;
+			5BF3E6A5144CCC3D00B744B9 /* PBXTextBookmark */ = 5BF3E6A5144CCC3D00B744B9 /* PBXTextBookmark */;
+			5BF3E6A6144CCC3D00B744B9 /* PBXTextBookmark */ = 5BF3E6A6144CCC3D00B744B9 /* PBXTextBookmark */;
+			5BF3E6FC146C2E4F00B744B9 /* PBXTextBookmark */ = 5BF3E6FC146C2E4F00B744B9 /* PBXTextBookmark */;
+			5BF3E6FD146C2E4F00B744B9 /* PBXTextBookmark */ = 5BF3E6FD146C2E4F00B744B9 /* PBXTextBookmark */;
+			5BF8F5CE13B21F630049DC74 /* PBXTextBookmark */ = 5BF8F5CE13B21F630049DC74 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 5BB9FF50136821B700253706 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	5B03FCB21369B483007ACB85 /* c++config.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = "c++config.h";
+		path = "/Developer/SDKs/MacOSX10.5.sdk/usr/include/c++/4.0.0/i686-apple-darwin9/bits/c++config.h";
+		sourceTree = "<absolute>";
+	};
+	5B03FD0C1369DDA0007ACB85 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B03FCB21369B483007ACB85 /* c++config.h */;
+		name = "c++config.h: 79";
+		rLen = 60;
+		rLoc = 2919;
+		rType = 0;
+		vrLen = 1214;
+		vrLoc = 2299;
+	};
+	5B03FD161369DDA0007ACB85 /* stl_vector.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = stl_vector.h;
+		path = "/Developer/SDKs/MacOSX10.5.sdk/usr/include/c++/4.0.0/bits/stl_vector.h";
+		sourceTree = "<absolute>";
+	};
+	5B0684CE144604C500146FAD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B0684CF144604C500146FAD /* allocator.h */;
+		name = "allocator.h: 97";
+		rLen = 0;
+		rLoc = 3335;
+		rType = 0;
+		vrLen = 1786;
+		vrLoc = 2350;
+	};
+	5B0684CF144604C500146FAD /* allocator.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = allocator.h;
+		path = "/Developer/SDKs/MacOSX10.5.sdk/usr/include/c++/4.0.0/bits/allocator.h";
+		sourceTree = "<absolute>";
+	};
+	5B06852814460DA700146FAD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B06852914460DA700146FAD /* ios_base.h */;
+		name = "ios_base.h: 124";
+		rLen = 0;
+		rLoc = 4113;
+		rType = 0;
+		vrLen = 1772;
+		vrLoc = 3104;
+	};
+	5B06852914460DA700146FAD /* ios_base.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = ios_base.h;
+		path = "/Developer/SDKs/MacOSX10.5.sdk/usr/include/c++/4.0.0/bits/ios_base.h";
+		sourceTree = "<absolute>";
+	};
+	5B25D9E313A507F5004C41FB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BDF007A137D83FC0041D521 /* vector */;
+		name = "vector: 192";
+		rLen = 0;
+		rLoc = 6039;
+		rType = 0;
+		vrLen = 1254;
+		vrLoc = 5220;
+	};
+	5B3577C6138C205C00CBE66F /* ESNeuron.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1345, 2548}}";
+			sepNavSelRange = "{236, 0}";
+			sepNavVisRange = "{3969, 1837}";
+			sepNavWindowFrame = "{{1100, 194}, {1404, 846}}";
+		};
+	};
+	5B3577C7138C205C00CBE66F /* ESNeuron.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1254, 2758}}";
+			sepNavSelRange = "{5534, 0}";
+			sepNavVisRange = "{190, 2755}";
+			sepNavWindowFrame = "{{1935, -5}, {1290, 1200}}";
+		};
+	};
+	5B3577C8138C205C00CBE66F /* ESRegion.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1434, 6146}}";
+			sepNavSelRange = "{7975, 0}";
+			sepNavVisRange = "{7110, 2072}";
+			sepNavWindowFrame = "{{2393, 25}, {1290, 970}}";
+		};
+	};
+	5B3577CC138C205C00CBE66F /* main.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {673, 2702}}";
+			sepNavSelRange = "{503, 0}";
+			sepNavVisRange = "{0, 1278}";
+			sepNavWindowFrame = "{{2296, 55}, {1400, 1113}}";
+		};
+	};
+	5B3577CD138C205C00CBE66F /* Network.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1644, 7112}}";
+			sepNavSelRange = "{2610, 52}";
+			sepNavVisRange = "{995, 2129}";
+			sepNavWindowFrame = "{{2088, 62}, {1163, 1017}}";
+		};
+	};
+	5B3577CF138C205C00CBE66F /* Neuron.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1598, 831}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 435}";
+		};
+	};
+	5B3577D1138C205C00CBE66F /* param.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {899, 2352}}";
+			sepNavSelRange = "{4487, 7}";
+			sepNavVisRange = "{3521, 2165}";
+			sepNavWindowFrame = "{{2158, 108}, {1400, 1013}}";
+		};
+	};
+	5B3577D2138C205C00CBE66F /* param.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1643, 1287}}";
+			sepNavSelRange = "{1301, 0}";
+			sepNavVisRange = "{203, 2494}";
+		};
+	};
+	5B3577D8138C205C00CBE66F /* utilities.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1598, 829}}";
+			sepNavSelRange = "{502, 0}";
+			sepNavVisRange = "{0, 1191}";
+		};
+	};
+	5B3577D9138C205C00CBE66F /* V1.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1627, 3220}}";
+			sepNavSelRange = "{4437, 0}";
+			sepNavVisRange = "{3270, 2473}";
+			sepNavWindowFrame = "{{1959, 0}, {1686, 1200}}";
+		};
+	};
+	5B884992146EDBA1008F2B09 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B9472B713717B4500919F2D /* Network.cpp */;
+		name = "Network.cpp: 58";
+		rLen = 0;
+		rLoc = 1627;
+		rType = 0;
+		vrLen = 1786;
+		vrLoc = 12945;
+	};
+	5B8849A4146EE17E008F2B09 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B9472C413717B4500919F2D /* V1.h */;
+		name = "V1.h: 18";
+		rLen = 0;
+		rLoc = 235;
+		rType = 0;
+		vrLen = 2177;
+		vrLoc = 12;
+	};
+	5B8849A8146EE17E008F2B09 /* declareGlobalVars.m */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.objc;
+		name = declareGlobalVars.m;
+		path = /Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/Dphil/Projects/VisBack/Scripts/Analysis/declareGlobalVars.m;
+		sourceTree = "<absolute>";
+	};
+	5B9472B113717B4500919F2D /* ESNeuron.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ESNeuron.h;
+		path = /Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/Dphil/Projects/VisBack/Source/ESNeuron.h;
+		sourceTree = "<absolute>";
+	};
+	5B9472B213717B4500919F2D /* ESRegion.cpp */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.cpp.cpp;
+		name = ESRegion.cpp;
+		path = /Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/Dphil/Projects/VisBack/Source/ESRegion.cpp;
+		sourceTree = "<absolute>";
+	};
+	5B9472B313717B4500919F2D /* ESRegion.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ESRegion.h;
+		path = /Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/Dphil/Projects/VisBack/Source/ESRegion.h;
+		sourceTree = "<absolute>";
+	};
+	5B9472B413717B4500919F2D /* FstreamWrapper.cpp */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.cpp.cpp;
+		name = FstreamWrapper.cpp;
+		path = /Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/Dphil/Projects/VisBack/Source/FstreamWrapper.cpp;
+		sourceTree = "<absolute>";
+	};
+	5B9472B513717B4500919F2D /* FstreamWrapper.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = FstreamWrapper.h;
+		path = /Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/Dphil/Projects/VisBack/Source/FstreamWrapper.h;
+		sourceTree = "<absolute>";
+	};
+	5B9472B613717B4500919F2D /* main.cpp */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.cpp.cpp;
+		name = main.cpp;
+		path = /Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/Dphil/Projects/VisBack/Source/main.cpp;
+		sourceTree = "<absolute>";
+	};
+	5B9472B713717B4500919F2D /* Network.cpp */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.cpp.cpp;
+		name = Network.cpp;
+		path = /Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/Dphil/Projects/VisBack/Source/Network.cpp;
+		sourceTree = "<absolute>";
+	};
+	5B9472B813717B4500919F2D /* Network.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = Network.h;
+		path = /Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/Dphil/Projects/VisBack/Source/Network.h;
+		sourceTree = "<absolute>";
+	};
+	5B9472B913717B4500919F2D /* Neuron.cpp */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.cpp.cpp;
+		name = Neuron.cpp;
+		path = /Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/Dphil/Projects/VisBack/Source/Neuron.cpp;
+		sourceTree = "<absolute>";
+	};
+	5B9472BA13717B4500919F2D /* Neuron.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = Neuron.h;
+		path = /Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/Dphil/Projects/VisBack/Source/Neuron.h;
+		sourceTree = "<absolute>";
+	};
+	5B9472BD13717B4500919F2D /* Region.cpp */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.cpp.cpp;
+		name = Region.cpp;
+		path = /Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/Dphil/Projects/VisBack/Source/Region.cpp;
+		sourceTree = "<absolute>";
+	};
+	5B9472BE13717B4500919F2D /* Region.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = Region.h;
+		path = /Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/Dphil/Projects/VisBack/Source/Region.h;
+		sourceTree = "<absolute>";
+	};
+	5B9472BF13717B4500919F2D /* Synapse.cpp */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.cpp.cpp;
+		name = Synapse.cpp;
+		path = /Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/Dphil/Projects/VisBack/Source/Synapse.cpp;
+		sourceTree = "<absolute>";
+	};
+	5B9472C013717B4500919F2D /* Synapse.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = Synapse.h;
+		path = /Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/Dphil/Projects/VisBack/Source/Synapse.h;
+		sourceTree = "<absolute>";
+	};
+	5B9472C113717B4500919F2D /* utilities.cpp */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.cpp.cpp;
+		name = utilities.cpp;
+		path = /Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/Dphil/Projects/VisBack/Source/utilities.cpp;
+		sourceTree = "<absolute>";
+	};
+	5B9472C213717B4500919F2D /* utilities.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = utilities.h;
+		path = /Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/Dphil/Projects/VisBack/Source/utilities.h;
+		sourceTree = "<absolute>";
+	};
+	5B9472C413717B4500919F2D /* V1.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = V1.h;
+		path = /Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/Dphil/Projects/VisBack/Source/V1.h;
+		sourceTree = "<absolute>";
+	};
+	5B9472C513717B4500919F2D /* V1Neuron.cpp */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.cpp.cpp;
+		name = V1Neuron.cpp;
+		path = /Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/Dphil/Projects/VisBack/Source/V1Neuron.cpp;
+		sourceTree = "<absolute>";
+	};
+	5B9472C613717B4500919F2D /* V1Neuron.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = V1Neuron.h;
+		path = /Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/Dphil/Projects/VisBack/Source/V1Neuron.h;
+		sourceTree = "<absolute>";
+	};
+	5BB9FF4A136821AC00253706 /* VisBack */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+			NO,
+			NO,
+			NO,
+			NO,
+			NO,
+			NO,
+			YES,
+			YES,
+			YES,
+			YES,
+			YES,
+			YES,
+		);
+		argumentStrings = (
+			train,
+			/Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/Dphil/Projects/VisBack/Experiments/2Object/1Epoch/Parameters.txt,
+			/Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/Dphil/Projects/VisBack/Experiments/2Object/BlankNetwork.txt,
+			/Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/Dphil/Projects/VisBack/Stimuli/TR_2O_9T_2L/FileList.txt,
+			/Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/Dphil/Projects/VisBack/Stimuli/TR_2O_9T_2L/Filtered/,
+			/Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/Dphil/Projects/VisBack/Experiments/2Object/1Epoch/Training/,
+			test,
+			/Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/Dphil/Projects/VisBack/Experiments/2Object/1Epoch/Parameters.txt,
+			/Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/Dphil/Projects/VisBack/Experiments/2Object/1Epoch/Training/TrainedNetwork.txt,
+			/Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/Dphil/Projects/VisBack/Stimuli/TR_2O_9T_2L/FileList.txt,
+			/Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/Dphil/Projects/VisBack/Stimuli/TR_2O_9T_2L/Filtered/,
+			/Network/Servers/mac0.cns.ox.ac.uk/Volumes/Data/Users/mender/Dphil/Projects/VisBack/Experiments/2Object/1Epoch/Testing/,
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = VisBack;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	5BB9FF50136821B700253706 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	5BB9FF51136821B700253706 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	5BCDFF1314716541002A22F3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B8849A8146EE17E008F2B09 /* declareGlobalVars.m */;
+		name = "declareGlobalVars.m: 16";
+		rLen = 0;
+		rLoc = 390;
+		rType = 0;
+		vrLen = 1379;
+		vrLoc = 0;
+	};
+	5BCDFF261471684A002A22F3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B3577D2138C205C00CBE66F /* param.h */;
+		name = "param.h: 38";
+		rLen = 0;
+		rLoc = 1105;
+		rType = 0;
+		vrLen = 2175;
+		vrLoc = 798;
+	};
+	5BCDFFF41475514F002A22F3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B3577D2138C205C00CBE66F /* param.h */;
+		name = "param.h: 46";
+		rLen = 0;
+		rLoc = 1301;
+		rType = 0;
+		vrLen = 2494;
+		vrLoc = 203;
+	};
+	5BDF007A137D83FC0041D521 /* vector */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.cpp.h;
+		name = vector;
+		path = "/Developer/SDKs/MacOSX10.5.sdk/usr/include/c++/4.0.0/debug/vector";
+		sourceTree = "<absolute>";
+	};
+	5BE74929136EC895009B5914 /* stl_iterator.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = stl_iterator.h;
+		path = "/Developer/SDKs/MacOSX10.5.sdk/usr/include/c++/4.0.0/bits/stl_iterator.h";
+		sourceTree = "<absolute>";
+	};
+	5BF3E2F2144795EE00B744B9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B9472B413717B4500919F2D /* FstreamWrapper.cpp */;
+		name = "FstreamWrapper.cpp: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1915;
+		vrLoc = 0;
+	};
+	5BF3E2F3144795EE00B744B9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B9472B513717B4500919F2D /* FstreamWrapper.h */;
+		name = "FstreamWrapper.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1199;
+		vrLoc = 0;
+	};
+	5BF3E2F5144795EE00B744B9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B9472BA13717B4500919F2D /* Neuron.h */;
+		name = "Neuron.h: 36";
+		rLen = 0;
+		rLoc = 832;
+		rType = 0;
+		vrLen = 1217;
+		vrLoc = 0;
+	};
+	5BF3E2F6144795EE00B744B9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B9472B913717B4500919F2D /* Neuron.cpp */;
+		name = "Neuron.cpp: 19";
+		rLen = 0;
+		rLoc = 365;
+		rType = 0;
+		vrLen = 432;
+		vrLoc = 0;
+	};
+	5BF3E2FA144795EE00B744B9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B9472BE13717B4500919F2D /* Region.h */;
+		name = "Region.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 840;
+		vrLoc = 0;
+	};
+	5BF3E2FB144795EE00B744B9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B9472BF13717B4500919F2D /* Synapse.cpp */;
+		name = "Synapse.cpp: 1";
+		rLen = 0;
+		rLoc = 1;
+		rType = 0;
+		vrLen = 896;
+		vrLoc = 0;
+	};
+	5BF3E2FC144795EE00B744B9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B9472C013717B4500919F2D /* Synapse.h */;
+		name = "Synapse.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 802;
+		vrLoc = 0;
+	};
+	5BF3E3BE1447A74000B744B9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B03FD161369DDA0007ACB85 /* stl_vector.h */;
+		name = "stl_vector.h: 654";
+		rLen = 0;
+		rLoc = 22596;
+		rType = 0;
+		vrLen = 2706;
+		vrLoc = 21468;
+	};
+	5BF3E40F1447B08C00B744B9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B3577C6138C205C00CBE66F /* ESNeuron.cpp */;
+		name = "ESNeuron.cpp: 14";
+		rLen = 0;
+		rLoc = 236;
+		rType = 0;
+		vrLen = 1439;
+		vrLoc = 3016;
+	};
+	5BF3E4B01448CB6200B744B9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B3577D1138C205C00CBE66F /* param.cpp */;
+		name = "param.cpp: 129";
+		rLen = 0;
+		rLoc = 4551;
+		rType = 0;
+		vrLen = 1713;
+		vrLoc = 0;
+	};
+	5BF3E5BB1449FA8A00B744B9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B9472BD13717B4500919F2D /* Region.cpp */;
+		name = "Region.cpp: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 766;
+		vrLoc = 0;
+	};
+	5BF3E5BC1449FA8A00B744B9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B9472B313717B4500919F2D /* ESRegion.h */;
+		name = "ESRegion.h: 115";
+		rLen = 0;
+		rLoc = 3827;
+		rType = 0;
+		vrLen = 2592;
+		vrLoc = 1374;
+	};
+	5BF3E626144B781900B744B9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B9472B613717B4500919F2D /* main.cpp */;
+		name = "main.cpp: 146";
+		rLen = 0;
+		rLoc = 3646;
+		rType = 0;
+		vrLen = 2028;
+		vrLoc = 2494;
+	};
+	5BF3E646144CBFFF00B744B9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B9472C213717B4500919F2D /* utilities.h */;
+		name = "utilities.h: 8";
+		rLen = 0;
+		rLoc = 175;
+		rType = 0;
+		vrLen = 996;
+		vrLoc = 0;
+	};
+	5BF3E647144CBFFF00B744B9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B9472C113717B4500919F2D /* utilities.cpp */;
+		name = "utilities.cpp: 689";
+		rLen = 0;
+		rLoc = 19710;
+		rType = 0;
+		vrLen = 1946;
+		vrLoc = 0;
+	};
+	5BF3E648144CBFFF00B744B9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B9472C513717B4500919F2D /* V1Neuron.cpp */;
+		name = "V1Neuron.cpp: 18";
+		rLen = 0;
+		rLoc = 480;
+		rType = 0;
+		vrLen = 480;
+		vrLoc = 0;
+	};
+	5BF3E64A144CBFFF00B744B9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B3577D9138C205C00CBE66F /* V1.cpp */;
+		name = "V1.cpp: 142";
+		rLen = 0;
+		rLoc = 3693;
+		rType = 0;
+		vrLen = 1943;
+		vrLoc = 3222;
+	};
+	5BF3E6A5144CCC3D00B744B9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B9472B113717B4500919F2D /* ESNeuron.h */;
+		name = "ESNeuron.h: 52";
+		rLen = 0;
+		rLoc = 1402;
+		rType = 0;
+		vrLen = 1651;
+		vrLoc = 3179;
+	};
+	5BF3E6A6144CCC3D00B744B9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B9472B813717B4500919F2D /* Network.h */;
+		name = "Network.h: 13";
+		rLen = 0;
+		rLoc = 169;
+		rType = 0;
+		vrLen = 1954;
+		vrLoc = 148;
+	};
+	5BF3E6FC146C2E4F00B744B9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B9472C613717B4500919F2D /* V1Neuron.h */;
+		name = "V1Neuron.h: 24";
+		rLen = 7;
+		rLoc = 352;
+		rType = 0;
+		vrLen = 551;
+		vrLoc = 0;
+	};
+	5BF3E6FD146C2E4F00B744B9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B9472B213717B4500919F2D /* ESRegion.cpp */;
+		name = "ESRegion.cpp: 346";
+		rLen = 0;
+		rLoc = 11270;
+		rType = 0;
+		vrLen = 2557;
+		vrLoc = 11474;
+	};
+	5BF8F5CE13B21F630049DC74 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BE74929136EC895009B5914 /* stl_iterator.h */;
+		name = "stl_iterator.h: 654";
+		rLen = 0;
+		rLoc = 20387;
+		rType = 0;
+		vrLen = 1073;
+		vrLoc = 19683;
+	};
+	8DD76F620486A84900D96B5E /* VisBack */ = {
+		activeExec = 0;
+		executables = (
+			5BB9FF4A136821AC00253706 /* VisBack */,
+		);
+	};
+	C6859E8B029090EE04C91782 /* VisBack.1 */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {778, 1050}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 2297}";
+			sepNavWindowFrame = "{{2050, 210}, {837, 880}}";
+		};
+	};
+}
