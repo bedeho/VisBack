@@ -15,7 +15,7 @@
 #include "V1.h"
 #include "V1Neuron.h"
 #include <iostream>
-#include "utilities.h"
+#include "Utilities.h"
 
 using std::cout;
 using std::endl;

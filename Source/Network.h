@@ -10,8 +10,6 @@
 #ifndef NETWORK_H
 #define NETWORK_H
 
-//#define OMP_DISABLE
-
 // Forward declarations
 class ESNeuron;
 class fstreamWrapper;

@@ -16,8 +16,9 @@
 #include <iostream>
 #include <sstream>
 #include <fstream>
-#include <math.h>
-#include "utilities.h"
+#include <cmath>
+#include <cstdlib>
+#include "Utilities.h"
 
 using std::cerr;
 using std::cout;
@@ -136,7 +137,7 @@ void V1::loadFileList(const char * fileList) {
 
 void V1::loadInput(const char * inputDirectory) {
 	
-	for(int f = 0;f < inputNames.size();f++) {
+	for(unsigned f = 0;f < inputNames.size();f++) {
 		
 		cout << "Loading Stimuli #" << f << endl;
 		

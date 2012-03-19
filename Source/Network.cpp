@@ -17,12 +17,13 @@
 #include <cstdlib>
 #include <string> 
 #include <sstream>
-#include <time.h>
-#include <math.h>
+#include <ctime>
+#include <cmath>
 #include <gsl/gsl_cdf.h>
 #include <gsl/gsl_randist.h>
+#include "Utilities.h"
 
-#ifndef OMP_DISABLE
+#ifdef OMP_ENABLE
 	#include <omp.h>
 #endif
 
@@ -37,9 +38,11 @@ using std::stringstream;
 // Do not use this constructor if you intend to train later, use the one 
 // below, if constructors where named then this amgibuity could have been
 // avoided
-Network::Network(const char * parameterFile, bool verbose) : p(parameterFile, false),
-																ESPathway(p.dimensions.size()),
-																verbose(verbose) {										
+Network::Network(const char * parameterFile, bool verbose) :
+		verbose(verbose),
+		p(parameterFile, false),
+		ESPathway(p.dimensions.size()) {
+
     // Init regions
 	striateCortex.init(p, NULL);
     for(u_short i = 0;i < ESPathway.size();i++)
@@ -62,9 +65,10 @@ Network::Network(const char * parameterFile, bool verbose) : p(parameterFile, fa
         ESPathway[i].setupEfferentLinks();
 }
 
-Network::Network(const char * fileList, const char * parameterFile, bool verbose, const char * inputWeightFile, bool learningOn) : p(parameterFile, learningOn),
-																							ESPathway(p.dimensions.size()),
-                                                                                            verbose(verbose) {
+Network::Network(const char * fileList, const char * parameterFile, bool verbose, const char * inputWeightFile, bool learningOn) :
+		verbose(verbose),
+		p(parameterFile, learningOn),
+		ESPathway(p.dimensions.size())  {
 																								
 	striateCortex.init(p, fileList);
 																								
@@ -168,9 +172,26 @@ void Network::run(const char * inputDirectory, const char * outputDirectory, boo
 	// Load all inputs
 	striateCortex.loadInput(inputDirectory);
 
-	#ifndef OMP_DISABLE
-	omp_set_num_threads(numberOfThreads);
-	double start = omp_get_wtime();
+	#ifdef OMP_ENABLE
+		omp_set_num_threads(numberOfThreads);
+		double start = omp_get_wtime();
+
+		if(numberOfThreads == 1) {
+
+			cout << endl;
+			cout << "**********************************" << endl;
+			cout << "**** ONLY SINGLE THREADED !!! ****" << endl;
+			cout << "**********************************" << endl;
+			cout << endl;
+		}
+		else
+			cout << "Number of threads: " << numberOfThreads << endl;
+	#else
+		cout << endl;
+		cout << "*******************" << endl;
+		cout << "**** no OpenMP ****" << endl;
+		cout << "*******************" << endl;
+		cout << endl;
 	#endif
 
 	u_short nrOfEpochs;
@@ -180,7 +201,7 @@ void Network::run(const char * inputDirectory, const char * outputDirectory, boo
 	else if(p.neuronType == DISCRETE)
 		nrOfEpochs = runDiscrete(outputDirectory, learningOn, xgrid);
 	
-	#ifndef OMP_DISABLE
+	#ifdef OMP_ENABLE
 	double finish = omp_get_wtime();
 	double elapsed = (double)(finish - start);
 	
@@ -198,13 +219,13 @@ u_short Network::runDiscrete(const char * outputDirectory, bool learningOn, bool
 	if(learningOn) {
 		
 		// Find total number of epochs, used in xgrid progress report
-		for(int r = 0; r < p.epochs.size();r++)
+		for(unsigned r = 0; r < p.epochs.size();r++)
 			nrOfEpochs += p.epochs[r];
 		
 		#pragma omp parallel private(totalEpochCounter)
 		{
 			// Iterate each region
-			for(int r = 0; r < ESPathway.size();r++) {
+			for(unsigned r = 0; r < ESPathway.size();r++) {
 				
 				// Train each region r epochs[r] times
 				for(int e = 0; e < p.epochs[r];e++) {
@@ -223,7 +244,7 @@ u_short Network::runDiscrete(const char * outputDirectory, bool learningOn, bool
 						striateCortex.switchToInput(s);
 						
 						// Compute new firing rates
-						for(int k = 0; k <= r;k++) {
+						for(unsigned k = 0; k <= r;k++) {
 							
 							ESPathway[k].computeNewFiringRate();
 							#pragma omp barrier
@@ -258,14 +279,14 @@ u_short Network::runDiscrete(const char * outputDirectory, bool learningOn, bool
 				striateCortex.switchToInput(s);
 				
 				// Compute new firing rates
-				for(int k = 0; k < ESPathway.size();k++) {
+				for(unsigned k = 0; k < ESPathway.size();k++) {
 					
 					ESPathway[k].computeNewFiringRate();
 					#pragma omp barrier	
 				}
 
 				// Save activity
-				for(int k = 0;k < ESPathway.size();k++)
+				for(unsigned k = 0;k < ESPathway.size();k++)
 					ESPathway[k].doTimeStep(true);
 			}
 		}
@@ -293,7 +314,7 @@ u_short Network::runContinous(const char * outputDirectory, bool learningOn, boo
 			
 			// We cannot continue without reseting old values from
 			// the last time step in the last epoch.
-			for(int k = 0;k < ESPathway.size();k++)
+			for(unsigned k = 0;k < ESPathway.size();k++)
 				ESPathway[k].clearState(true);
 			
 			#pragma omp single
@@ -313,7 +334,7 @@ u_short Network::runContinous(const char * outputDirectory, bool learningOn, boo
 				for(u_short t = 0; t < p.stepsPrTransform;t++) {
 					
 					// Compute new firing rates
-					for(int k = 0; k < ESPathway.size();k++)
+					for(unsigned k = 0; k < ESPathway.size();k++)
 						ESPathway[k].computeNewFiringRate();
 					
 					// We need barrier due to nowait in computeNewFiringRate()
@@ -321,7 +342,7 @@ u_short Network::runContinous(const char * outputDirectory, bool learningOn, boo
 					
 					// Do learning
 					if(learningOn) {
-						for(int k = 0; k < ESPathway.size();k++)
+						for(unsigned k = 0; k < ESPathway.size();k++)
 							ESPathway[k].applyLearningRule();
 					}
 					
@@ -330,7 +351,7 @@ u_short Network::runContinous(const char * outputDirectory, bool learningOn, boo
 					
 					// Make time step for each region, and save data if we are on appropriate time step
 					bool save = ((t+1) % outputAt) == 0;
-					for(int k = 0;k < ESPathway.size();k++)
+					for(unsigned k = 0;k < ESPathway.size();k++)
 						ESPathway[k].doTimeStep(save); 
 				}
 				
@@ -339,13 +360,13 @@ u_short Network::runContinous(const char * outputDirectory, bool learningOn, boo
 					
 					if((s+1) % nrOfTransformations == 0 && p.resetActivity) {
 						
-						for(int k = 0;k < ESPathway.size();k++)
+						for(unsigned k = 0;k < ESPathway.size();k++)
 							ESPathway[k].clearState(p.resetTrace);
 					}
 					
 				} else { // In testing we MUST reset betweene transforms when we are testing with continous neurons
 					
-					for(int k = 0;k < ESPathway.size();k++)
+					for(unsigned k = 0;k < ESPathway.size();k++)
 						ESPathway[k].clearState(p.resetTrace); // does not matter if trace is reset here
 				}
 			}

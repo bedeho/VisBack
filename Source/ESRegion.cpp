@@ -18,7 +18,7 @@
 #include <algorithm>
 #include <queue>
 #include <iostream>
-#include "utilities.h"
+#include "Utilities.h"
 
 using std::cout;
 using std::endl;
@@ -379,7 +379,7 @@ void ESRegion::outputNeuronHistory(fstreamWrapper & firingRateFile,
     for(int d = 0;d < depth;d++)                   
     	for(int i = 0;i < dimension;i++)
     		for(int j = 0;j < dimension;j++)
-    			for(int t = 0;t < stateSaveCounter;t++) {
+    			for(unsigned t = 0;t < stateSaveCounter;t++) {
 					
         			firingRateFile << Neurons[d][i][j].firingRateHistory[t];
         			activationFile << Neurons[d][i][j].activationHistory[t];
@@ -390,7 +390,7 @@ void ESRegion::outputNeuronHistory(fstreamWrapper & firingRateFile,
 
 void ESRegion::outputSparsityPercentileValueHistory(fstreamWrapper & sparsityPercentileValueFile) {
 	
-	for(int t = 0;t < stateSaveCounter;t++)
+	for(unsigned t = 0;t < stateSaveCounter;t++)
 		sparsityPercentileValueFile << sparsityPercentileValue[t];
 }
 
@@ -414,7 +414,7 @@ void ESRegion::outputAfferentSynapses(fstreamWrapper & weightFile, bool onlyPres
     				if(onlyPresentState)
     				    weightFile << n->afferentSynapses[s].weight;
     				else
-            			for(int t = 0;t < stateSaveCounter;t++)
+            			for(unsigned t = 0;t < stateSaveCounter;t++)
                 			weightFile << n->afferentSynapses[s].weightHistory[t];
             	}
     		}

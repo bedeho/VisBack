@@ -1,12 +1,20 @@
+/*
+ *  main.cpp
+ *  VisBack
+ *
+ *  Created by Bedeho Mender on 11/29/10.
+ *  Copyright 2010 OFTNAI. All rights reserved.
+ *
+ */
 
 #include "Network.h"
 #include <iostream>
 #include <cstring>
 #include <string>
 #include <cstdlib>
-//#include "utilities.h"
+#include "Utilities.h"
 
-#ifndef OMP_DISABLE
+#ifdef OMP_ENABLE
 	#include <omp.h>
 #endif
 
@@ -24,17 +32,22 @@ int main (int argc, char *argv[]) {
 	bool verbose = false;
 	bool xgrid = false;
 	
-	#ifndef OMP_DISABLE
+	#ifdef OMP_ENABLE
 		int numberOfThreads = (3 * omp_get_num_procs())/4; // Ben's advice, use 75% of cores
 	#else
 		int numberOfThreads = 1;
 	#endif
-	
-	//dumping stuff for xgrid
-	//for(int j = 0;j < argc;j++)
-	//	cout << j << ": " << argv[j] << endl;
-	//cout << endl;
-	//dumping stuff
+
+	// Dumping parameters passed from xgrid
+	if(xgrid) {
+
+		cout << "Parameters passed:" << endl;
+
+		for(int j = 0;j < argc;j++)
+			cout << j << ": " << argv[j] << endl;
+
+		cout << endl;
+	}
 
 	int i = 1;
 	for(;i < argc;i++) {
