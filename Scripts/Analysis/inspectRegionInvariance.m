@@ -274,7 +274,7 @@ function inspectRegionInvariance(folder, networkFile)
         
         
         if numTransforms > 1,
-            axis([1 numTransforms -0.1 1.1]);
+            axis([0 (numTransforms+1) -0.1 1.1]);
         else
             axis([0 2 -0.1 1.1]);
         end
